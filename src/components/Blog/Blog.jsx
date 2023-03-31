@@ -4,14 +4,18 @@ import "./Blog.css";
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
+    const[sidebar,setSidebar]=useState([])
     useEffect(() => {
         fetch('blogs.json')
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, []);
     const handleAddToCart = (blog)=>{
-        console.log(blog);
+        // console.log(blog);
+        const newItem=[...sidebar,blog];
+        setSidebar(newItem);
         }
+
 
 
     return (
@@ -32,7 +36,8 @@ const Blog = () => {
 
                 </div>
                 <div className="sideCart-container">
-                    <p></p>
+                    <p>Bookmarked Blogs:{sidebar.length} </p>
+            
                 </div>
 
             </div>
