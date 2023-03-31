@@ -8,7 +8,10 @@ const Blog = () => {
         fetch('blogs.json')
             .then(res => res.json())
             .then(data => setBlogs(data))
-    }, [])
+    }, []);
+    const handleAddToCart = (blog)=>{
+        console.log(blog);
+        }
 
 
     return (
@@ -21,6 +24,7 @@ const Blog = () => {
                         blogs.map(blog => <BlogItems
                             key={blog.id} 
                             blog={blog}
+                            handleAddToCart={handleAddToCart}
                             >
 
                         </BlogItems>)

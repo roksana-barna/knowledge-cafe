@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const BlogItems = (props) => {
-    const { authorName, blogTitle, images, blogCoverImage, authorImage, publishDate, readTime } = props.blog;
+    const { authorName, blogTitle, blogCoverImage, authorImage, publishDate, readTime } = props.blog;
+       const handleAddToCart=props.handleAddToCart;
     return (
         
         <div className='blog'>
@@ -23,7 +24,7 @@ const BlogItems = (props) => {
                 </div>
 
                 <div className='readTime'>
-                    <p>5 min read <FontAwesomeIcon icon={faBookmark} /></p>
+                    <p>5 min read <FontAwesomeIcon  onClick={ ()=>handleAddToCart(props.blog)} icon={faBookmark} /></p>
                 </div>
 
             </div>
