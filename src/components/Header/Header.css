@@ -2,12 +2,13 @@
     width:1280px;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     padding-top: 5px;
     
 }
 .headerName{
-    padding: 5px;
+    padding:5px;
+    margin-left: 30px;
     
    
 }
@@ -17,5 +18,5 @@
 
 }
 .menu{
-    margin-left :720px;
+    margin-left :200px;
 }

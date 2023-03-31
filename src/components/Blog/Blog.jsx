@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BlogItems from '../BlogItems/BlogItems';
 import "./Blog.css";
 
 const Blog = () => {
@@ -16,7 +17,14 @@ const Blog = () => {
 
 
                 <div className="blog-container">
-                    <h2>{blogs.length}</h2>
+                    {
+                        blogs.map(blog => <BlogItems
+                            key={blog.id} 
+                            blog={blog}
+                            >
+
+                        </BlogItems>)
+                    }
 
                 </div>
                 <div className="sideCart-container">

@@ -8,9 +8,10 @@ const Header = () => {
                 <h2>Learning Jone</h2>
             </div>
             <div className='menu'>
-                <a href="programming">Programming</a>
+                 <a href="programming">Programming</a>
                 <a href="about">About</a>
-                <a href="contact">Contact</a>
+                <a href="contact">Contact</a> 
+            
                 
             </div>
   </div>
