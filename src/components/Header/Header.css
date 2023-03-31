@@ -1,0 +1,21 @@
+.header{
+    width:1280px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 5px;
+    
+}
+.headerName{
+    padding: 5px;
+    
+   
+}
+.menu a{
+    margin-left: 15px;
+    text-decoration: none;
+
+}
+.menu{
+    margin-left :720px;
+}
