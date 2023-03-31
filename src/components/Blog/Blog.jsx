@@ -28,7 +28,7 @@ const Blog = () => {
 
                 </div>
                 <div className="sideCart-container">
-                    <p>hh</p>
+                    <p></p>
                 </div>
 
             </div>
