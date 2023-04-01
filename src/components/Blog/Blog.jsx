@@ -66,7 +66,8 @@ const Blog = () => {
                 </li>
                 <li>when component unmounts
                 </li>
-
+                <h5>how to react work?</h5>
+                 <p> React is a tool for building UI components..React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props.React uses the key to match the virtual DOM node with the actual DOM node.React internally creates, updates, and destroys instances to figure out the DOM elements tree that needs to be rendered to the browser </p>
             </div>
 
 
