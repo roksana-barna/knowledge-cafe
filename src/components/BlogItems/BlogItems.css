@@ -41,7 +41,8 @@
     padding-top: 15px;
     margin-left: 20px;
 }
-.mark-as-read a{
-    text-decoration:underline;
+.markread button {
+    text-decoration:solid;
+    background-color:aqua
 
 }

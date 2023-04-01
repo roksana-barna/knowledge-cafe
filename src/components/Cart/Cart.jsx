@@ -4,12 +4,12 @@ import "./Cart.css";
 const Cart = ({ time, carts }) => {
     return (
         <div className="cart">
-            <h4 className="read">Read Time:{time} min</h4>
-            <p>Bookmarked Blogs:{carts?.length}</p>
+            <h6 className="read">Spend Time on Read:{time} min</h6>
+            <p className='book'>Bookmarked Blogs:{carts?.length}</p>
             <div>
                 <div className="blogTitle">
 
-                    <div>{
+                    <div className='bookmark'>{
                         carts?.map(cart => <p key={cart} style={{ marginTop: '10px' }}>{cart}</p>)
                     }</div>
 

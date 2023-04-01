@@ -1,6 +1,8 @@
 .blogTitle {
     background-color: beige;
     border-radius: 5px;
+    gap: 2px;
+    padding: 5px;
 }
 
 .read {
@@ -11,5 +13,21 @@
     height: 50px;
     left: 900px;
     top: 178px;
+    padding: 12px;
+    color: black;
 
+}
+
+.bookmark p {
+    margin-top: 5px;
+    border: 1px solid cornflowerblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.book {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    color: black;
 }

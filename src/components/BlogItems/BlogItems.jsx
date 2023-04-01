@@ -28,7 +28,7 @@ const BlogItems = (props) => {
 
                 <div className='readTime'>
                     <p>{readTime} min read <FontAwesomeIcon onClick={() => { handleAddToCart(blogTitle); handleToast() }} icon={faBookmark} /></p>
-            
+
                 </div>
 
             </div>
@@ -44,13 +44,11 @@ const BlogItems = (props) => {
                 </div>
 
             </div>
-            <div className='mark-as-read'>
+            <div className='markread'>
                 <button onClick={() => handleReadTime(readTime)} href='mark-as-read' >  Mark as read</button>
             </div>
         </div>
     );
 };
-
-
 
 export default BlogItems;

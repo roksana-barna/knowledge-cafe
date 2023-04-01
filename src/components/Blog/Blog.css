@@ -13,6 +13,10 @@
     top:0;
 
 }
+.description{
+    padding-top: 25px;
+    padding-left: 15px;
+}
 @media   screen and (max-width:576px) {
     .blog-container{
         display: grid;
