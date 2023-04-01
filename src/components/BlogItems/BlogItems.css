@@ -7,11 +7,8 @@
     padding: 10px;
     margin-top: 10px;
 }
-
 .hash {
     display: flex;
-    
-
 }
 
 .hash p {
@@ -31,9 +28,7 @@
 }
 .authorinfo{
     display: flex;
-    justify-content: space-between;
-    
-   
+    justify-content: space-between; 
 }
 .author{
     display: flex;
@@ -42,8 +37,6 @@
     margin-right: 330px;
     padding-top: 15px;
 }
-
-
 .author-name{
     padding-top: 15px;
     margin-left: 20px;

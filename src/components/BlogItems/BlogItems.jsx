@@ -1,20 +1,19 @@
 import React from 'react';
 import './BlogItems.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faBookmark } from '@fortawesome/free-solid-svg-icons'
-  import { ToastContainer, toast } from 'react-toastify';
-
-
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { ToastContainer, toast } from 'react-toastify';
 const BlogItems = (props) => {
     const { authorName, blogTitle, blogCoverImage, authorImage, publishDate, readTime } = props.blog;
-       const handleAddToCart=props.handleAddToCart;
-       const handleToast=()=>{
+    const handleAddToCart = props.handleAddToCart;
+    const handleReadTime = props.handleReadTime;
+    const handleToast = () => {
         toast("Wow so easy!");
-       }
+    }
     return (
-        
+
         <div className='blog'>
-            
+
             <img className='coverimg' src={blogCoverImage} alt="" />
             <div className='authorinfo'>
 
@@ -28,11 +27,11 @@ const BlogItems = (props) => {
                 </div>
 
                 <div className='readTime'>
-                    <p>{readTime} min read <FontAwesomeIcon  onClick={ ()=>{handleAddToCart(props.blog);handleToast()} }icon={faBookmark} /></p>
+                    <p>{readTime} min read <FontAwesomeIcon onClick={() => { handleAddToCart(blogTitle); handleToast() }} icon={faBookmark} /></p>
+            
                 </div>
 
             </div>
-
             <div>
                 <h2>{blogTitle}</h2>
                 <div className='hash'>
@@ -45,12 +44,10 @@ const BlogItems = (props) => {
                 </div>
 
             </div>
-          <div className='mark-as-read'>
-            <a href="Mark as read">Mark as read</a>
-          </div>
+            <div className='mark-as-read'>
+                <button onClick={() => handleReadTime(readTime)} href='mark-as-read' >  Mark as read</button>
+            </div>
         </div>
-
-
     );
 };
 
