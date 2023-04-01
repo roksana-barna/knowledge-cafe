@@ -2,11 +2,15 @@ import React from 'react';
 import './BlogItems.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+  import { ToastContainer, toast } from 'react-toastify';
 
 
 const BlogItems = (props) => {
     const { authorName, blogTitle, blogCoverImage, authorImage, publishDate, readTime } = props.blog;
        const handleAddToCart=props.handleAddToCart;
+       const handleToast=()=>{
+        toast("Wow so easy!");
+       }
     return (
         
         <div className='blog'>
@@ -24,7 +28,7 @@ const BlogItems = (props) => {
                 </div>
 
                 <div className='readTime'>
-                    <p>{readTime} min read <FontAwesomeIcon  onClick={ ()=>handleAddToCart(props.blog)} icon={faBookmark} /></p>
+                    <p>{readTime} min read <FontAwesomeIcon  onClick={ ()=>{handleAddToCart(props.blog);handleToast()} }icon={faBookmark} /></p>
                 </div>
 
             </div>

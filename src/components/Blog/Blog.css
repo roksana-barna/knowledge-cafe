@@ -9,5 +9,7 @@
     background-color: aquamarine;
     height: 700px;
     padding: 20px;
+    position: sticky;
+    top:0;
 
 }

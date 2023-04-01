@@ -1,4 +1,19 @@
-.blogTitle{
+.blogTitle {
     background-color: beige;
     border-radius: 5px;
+}
+
+.read {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border: 2px solid blue;
+    width: 301px;
+    height: 50px;
+    left: 900px;
+    top: 178px;
+
+}
+.cart{
+    position: sticky;
+    top:0;
 }

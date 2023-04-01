@@ -17,9 +17,17 @@ const Cart = (props) => {
     // let item=[];
     const items=cart.map(cart=>cart.blogTitle)
     // item.push(blogTitle);
+//     const readsTime=()=>{
+//         let total=0;
+//         for(const blog of cart){
+//   total=total+blog.readTime;
+//         }
+
+//     }
 
     return (
-        <div>
+        <div className="cart">
+            <h4 className="read">Read Time: min</h4>
             <p>Bookmarked Blogs:{cart.length}</p>
             <div>
                 <div className="blogTitle">

@@ -11,12 +11,15 @@ const Blog = () => {
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, []);
+    
     const handleAddToCart = (blog) => {
         // console.log(blog);
         const newItem = [...sidebar, blog];
         setSidebar(newItem);
+       
     }
 
+   
 
 
     return (
@@ -29,6 +32,7 @@ const Blog = () => {
                             key={blog.id}
                             blog={blog}
                             handleAddToCart={handleAddToCart}
+                        
                         >
 
                         </BlogItems>)
@@ -38,7 +42,7 @@ const Blog = () => {
                 <div className="sideCart-container">
 
                     <Cart cart= {sidebar}></Cart>
-                    
+
                   
                 </div>
 
