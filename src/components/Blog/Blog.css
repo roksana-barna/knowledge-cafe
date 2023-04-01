@@ -13,3 +13,17 @@
     top:0;
 
 }
+@media   screen and (max-width:576px) {
+    .blog-container{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);  
+        
+    }
+    .sideCart-container{
+        position:absolute;
+        top:330%;
+        left: 50px;
+
+    }
+    
+}
