@@ -5,3 +5,9 @@
 .blog-container{
     gap:100px;
 }
+.sideCart-container{
+    background-color: aquamarine;
+    height: 700px;
+    padding: 20px;
+
+}

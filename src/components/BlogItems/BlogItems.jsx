@@ -24,7 +24,7 @@ const BlogItems = (props) => {
                 </div>
 
                 <div className='readTime'>
-                    <p>5 min read <FontAwesomeIcon  onClick={ ()=>handleAddToCart(props.blog)} icon={faBookmark} /></p>
+                    <p>{readTime} min read <FontAwesomeIcon  onClick={ ()=>handleAddToCart(props.blog)} icon={faBookmark} /></p>
                 </div>
 
             </div>
